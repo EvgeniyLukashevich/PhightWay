@@ -17,7 +17,7 @@ import dataBase as db
 import markups
 import battle as batt
 
-bot = Bot(token = 'здесь был токен')
+bot = Bot(token=os.getenv('PW_TOKEN'))
 
 dp = Dispatcher(bot, storage=MemoryStorage())
 
